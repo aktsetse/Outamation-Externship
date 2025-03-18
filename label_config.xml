@@ -1,0 +1,18 @@
+<View>
+  <!-- Display the uploaded image -->
+  <Image name="image" value="$image" />
+  <!-- Simple bounding box labels for annotation -->
+  <RectangleLabels name="label" toName="image">
+    <Label value="Invoice Number" background="blue" />
+    <Label value="Date" background="green" />
+    <Label value="Customer Name" background="yellow" />
+    <Label value="Company Name" background="violet" />
+    <Label value="Line Items" background="orange" />
+    <Label value="Total Amount" background="purple" />
+    <Label value="Addresses" background="red" />
+    <Label value="Detected Text" background="brown" />
+  </RectangleLabels>
+  <TextArea name = "transcription" toName = "image" editable = "true" perRegion = "true" rows = "3" placeholder = "Enter recognized text here" />
+                                                                                                 
+                                                                                                
+</View>
